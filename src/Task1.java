@@ -18,8 +18,8 @@ public class Task1 {
     scanner.next();
     System.out.println("Введите рост Ивана (натуральное число, не более 200):");
     int heightIvan = scanner.nextInt();
-    for (int i = 0; i < height.size(); i++) {
-      if (heightIvan <= height.get(i)) {
+    for (Integer integer : height) {
+      if (heightIvan <= integer) {
         ++place;
       } else {
         break;
